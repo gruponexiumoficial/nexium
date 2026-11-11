@@ -1,0 +1,11 @@
+{
+  "name": "GRUPO NEXIUM",
+  "short_name": "NEXIUM",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#081233",
+  "theme_color": "#081233",
+  "icons": [
+    { "src": "img/icono-nexium.jpg", "sizes": "360x360", "type": "image/jpeg" }
+  ]
+}

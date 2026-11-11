@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRUPO NEXIUM — Soluciones integrales para el transporte y la logística</title>
+<meta name="description" content="GRUPO NEXIUM: centro de soluciones para transportistas. Representación comercial, gestoría federal y estatal, marketing especializado, digitalización y servicios complementarios con cobertura nacional. Conectamos soluciones. Impulsamos negocios.">
+<meta property="og:title" content="GRUPO NEXIUM — Conectamos soluciones. Impulsamos negocios.">
+<meta property="og:description" content="Soluciones integrales para el transporte y la logística: representación comercial, trámites, marketing, digitalización y más, en un solo lugar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gruponexiumoficial.github.io/nexium/">
+<meta property="og:image" content="https://gruponexiumoficial.github.io/nexium/img/logo-nexium.jpg">
+<link rel="icon" type="image/jpeg" href="img/icono-nexium.jpg">
+<link rel="apple-touch-icon" href="img/icono-nexium.jpg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#081233">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#081233; --navy2:#0b1a45; --panel:#0e2056; --cyan:#22b8f0; --cyan2:#7dd7fb;
+  --ink:#eef3fb; --muted:#a9bcd9; --line:rgba(125,180,240,.18); --card:#0c1c48;
+  --wa:#22c064;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden;overflow-x:clip}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--navy);color:var(--ink);line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1180px,92%);margin:0 auto}
+h1,h2,h3{font-family:'Archivo',sans-serif;line-height:1.12}
+.cy{color:var(--cyan)}
+.grad-text{background:linear-gradient(92deg,#7dd7fb,#22b8f0 55%,#3b82f6);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* ===== Header ===== */
+header{position:fixed;inset:0 0 auto 0;z-index:60;background:rgba(8,18,51,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;justify-content:space-between;padding:10px 0;gap:14px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:46px;height:46px;border-radius:10px;object-fit:cover}
+.brand .bt{font-family:'Archivo';font-weight:900;font-size:1.28rem;letter-spacing:.06em;color:#fff}
+.brand .bt span{color:var(--cyan)}
+.brand .bs{font-size:.62rem;letter-spacing:.34em;color:var(--muted);text-transform:uppercase}
+nav.main{display:flex;gap:26px;font-weight:600;font-size:.95rem;color:var(--muted)}
+nav.main a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.98rem;transition:.25s;border:1px solid transparent;cursor:pointer}
+.btn-wa{background:var(--wa);color:#04160a}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(34,192,100,.35)}
+.btn-cy{background:linear-gradient(92deg,#1d9bd8,#22b8f0);color:#02131f}
+.btn-cy:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(34,184,240,.35)}
+.btn-ghost{border-color:var(--line);color:#fff;background:rgba(255,255,255,.04)}
+.btn-ghost:hover{border-color:var(--cyan)}
+.btn-sm{padding:10px 18px;font-size:.9rem}
+@media(max-width:900px){nav.main{display:none}}
+/* ===== Hero ===== */
+.hero{position:relative;padding:158px 0 92px;background:
+  linear-gradient(180deg,rgba(8,18,51,.86),rgba(8,18,51,.94)),
+  url('img/hero.jpg') center 30%/cover no-repeat}
+.hero .kicker{display:inline-block;padding:7px 16px;border:1px solid var(--line);border-radius:999px;color:var(--cyan2);font-weight:700;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;background:rgba(34,184,240,.07)}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:900;color:#fff;margin:22px 0 8px;max-width:900px}
+.hero .slogan{font-family:'Archivo';font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:700;margin-bottom:14px}
+.hero p.lead{color:var(--muted);font-size:1.13rem;max-width:640px}
+.hero .logo-hero{width:min(330px,74vw);border-radius:20px;border:1px solid var(--line);box-shadow:0 30px 70px rgba(0,0,0,.5);margin-bottom:30px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 32px}
+.badges span{border:1px solid var(--line);background:rgba(255,255,255,.05);padding:8px 15px;border-radius:999px;font-size:.88rem;font-weight:600;color:#dbeafe}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+/* ===== Secciones ===== */
+.sec{padding:88px 0}
+.sec.alt{background:linear-gradient(180deg,var(--navy2),var(--navy))}
+.sec-tag{display:inline-block;color:var(--cyan);font-weight:800;letter-spacing:.24em;text-transform:uppercase;font-size:.78rem;margin-bottom:14px}
+.sec h2{font-size:clamp(1.8rem,4.4vw,2.7rem);font-weight:900;color:#fff;margin-bottom:14px}
+.sec .lead{color:var(--muted);max-width:760px;font-size:1.05rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:960px){.grid3,.grid4{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.grid2,.grid3,.grid4{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:.3s}
+.card:hover{transform:translateY(-5px);border-color:rgba(34,184,240,.5)}
+.card h3{color:#fff;font-size:1.18rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.97rem}
+.card .ic{font-size:1.9rem;margin-bottom:12px}
+.photo{border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.num-list{list-style:none;counter-reset:nx}
+.num-list li{display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.num-list li:last-child{border-bottom:none}
+.num-list .n{font-family:'Archivo';font-weight:900;color:var(--cyan);font-size:1.05rem;min-width:38px}
+.num-list b{color:#fff}
+.checks{list-style:none;display:grid;gap:11px}
+.checks li{display:flex;gap:11px;color:#dbe7f7;font-size:.99rem;align-items:flex-start}
+.checks li::before{content:"✓";color:var(--cyan);font-weight:900;margin-top:1px}
+.mini-list{list-style:none;display:grid;gap:7px;margin-top:6px}
+.mini-list li{color:var(--muted);font-size:.93rem;display:flex;gap:9px}
+.mini-list li::before{content:"▸";color:var(--cyan);font-weight:700}
+.strip{background:linear-gradient(92deg,#0d2b6b,#1256a8 55%,#0d2b6b);border-block:1px solid var(--line);padding:30px 0;text-align:center}
+.strip .big{font-family:'Archivo';font-weight:900;font-size:clamp(1.3rem,3.4vw,2rem);color:#fff}
+.strip p{color:#cfe6ff;margin-top:6px}
+.pilar .ic{width:56px;height:56px;border-radius:16px;background:rgba(34,184,240,.12);display:grid;place-items:center;font-size:1.6rem;margin-bottom:16px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+@media(max-width:960px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:center}
+.step .sn{width:52px;height:52px;margin:0 auto 14px;border-radius:50%;background:linear-gradient(135deg,#22b8f0,#2563eb);display:grid;place-items:center;font-family:'Archivo';font-weight:900;color:#fff;font-size:1.15rem}
+.step h3{color:#fff;font-size:1.02rem;margin-bottom:7px}
+.step p{color:var(--muted);font-size:.9rem}
+.zone{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.zone h3{color:#fff;font-size:1.05rem;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.zone .dot{width:13px;height:13px;border-radius:4px;flex:none}
+form{display:grid;gap:14px}
+label{font-size:.86rem;font-weight:700;color:var(--cyan2);letter-spacing:.04em}
+input,select,textarea{width:100%;margin-top:6px;padding:13px 15px;border-radius:12px;border:1px solid var(--line);background:#0a1a42;color:#fff;font:inherit;font-size:.98rem}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--cyan);border-color:transparent}
+select option{background:#0a1a42}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:70;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;font-size:1.7rem;box-shadow:0 14px 34px rgba(0,0,0,.45)}
+footer{border-top:1px solid var(--line);padding:52px 0 30px;background:#060f2a;text-align:center}
+footer .fl{width:120px;margin:0 auto 16px;border-radius:14px;border:1px solid var(--line)}
+footer p{color:var(--muted);font-size:.92rem}
+.app-band{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;background:linear-gradient(92deg,#0d2b6b,#0b1a45);border:1px solid var(--line);border-radius:22px;padding:30px}
+.app-band h3{color:#fff;font-size:1.35rem}
+.app-band p{color:var(--muted)}
+/* ===== Animación lateral ===== */
+.rv-l,.rv-r{opacity:0;transition:opacity .85s cubic-bezier(.16,.68,.24,1),transform .85s cubic-bezier(.16,.68,.24,1)}
+.rv-l{transform:translateX(-84px)} .rv-r{transform:translateX(84px)}
+.rv-l.in,.rv-r.in{opacity:1;transform:none}
+.load-l{animation:slideL .95s cubic-bezier(.16,.68,.24,1) both}
+@keyframes slideL{from{opacity:0;transform:translateX(-64px)}to{opacity:1;transform:none}}
+@media(max-width:760px){.rv-l{transform:translateX(-40px)}.rv-r{transform:translateX(40px)}@keyframes slideL{from{opacity:0;transform:translateX(-36px)}to{opacity:1;transform:none}}}
+@media (prefers-reduced-motion: reduce){.rv-l,.rv-r{opacity:1;transform:none;transition:none}.load-l{animation:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"GRUPO NEXIUM","slogan":"Conectamos soluciones. Impulsamos negocios.","description":"Centro de soluciones para transportistas: representación comercial, gestoría federal y estatal, marketing especializado, digitalización y servicios complementarios con cobertura nacional.","telephone":"+52 229 458 6824","image":"https://gruponexiumoficial.github.io/nexium/img/logo-nexium.jpg","url":"https://gruponexiumoficial.github.io/nexium/","areaServed":"MX"}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap hbar">
+    <a class="brand" href="#inicio">
+      <img src="img/icono-nexium.jpg" alt="Logotipo de GRUPO NEXIUM">
+      <span><span class="bt">GRUPO NE<span>X</span>IUM</span><br><span class="bs">Soluciones integrales</span></span>
+    </a>
+    <nav class="main">
+      <a href="#servicios">Servicios</a>
+      <a href="#tramites">Trámites</a>
+      <a href="#cobertura">Cobertura</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-wa btn-sm" href="https://wa.me/522294586824?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20GRUPO%20NEXIUM" target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <img class="logo-hero load-l" src="img/logo-nexium.jpg" alt="Logotipo de GRUPO NEXIUM">
+    <span class="kicker load-l">Centro de soluciones para transportistas</span>
+    <h1 class="load-l">Soluciones integrales para el <span class="grad-text">transporte</span> y la <span class="grad-text">logística</span></h1>
+    <p class="slogan load-l">Conectamos soluciones. <span class="cy">Impulsamos negocios.</span></p>
+    <p class="lead load-l">Tu negocio, acompañado para crecer: unimos experiencia, especialización y una red de aliados para ofrecerte soluciones reales y medibles.</p>
+    <div class="badges load-l">
+      <span>🤝 Representación comercial</span><span>📋 Gestoría federal y estatal</span><span>📣 Marketing especializado</span><span>💻 Digitalización</span><span>🗺️ Cobertura nacional</span>
+    </div>
+    <div class="cta-row load-l">
+      <a class="btn btn-wa" href="https://wa.me/522294586824?text=Hola%2C%20quiero%20solicitar%20mi%20diagn%C3%B3stico%20de%20GRUPO%20NEXIUM" target="_blank" rel="noopener">Solicita tu diagnóstico</a>
+      <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- EL RETO -->
+<section class="sec">
+  <div class="wrap">
+    <div class="grid2" style="align-items:center">
+      <div class="rv-l">
+        <span class="sec-tag">El reto de hoy</span>
+        <h2>Las empresas de transporte enfrentan <span class="grad-text">grandes desafíos</span></h2>
+        <p class="lead">Crecer y ser más competitivas exige resolver, al mismo tiempo, la operación, los trámites y la presencia comercial. Estos son los retos que vemos todos los días:</p>
+        <div class="photo" style="margin-top:26px"><img src="img/reto.jpg" alt="El reto de crecer en el transporte" loading="lazy"></div>
+      </div>
+      <ol class="num-list rv-r">
+        <li><span class="n">01</span><span><b>Falta de clientes</b> y carga constante.</span></li>
+        <li><span class="n">02</span><span><b>Unidades improductivas.</b></span></li>
+        <li><span class="n">03</span><span><b>Trámites y permisos</b> pendientes.</span></li>
+        <li><span class="n">04</span><span><b>Proveedores dispersos</b> y costos altos.</span></li>
+        <li><span class="n">05</span><span><b>Imagen y presencia comercial</b> limitada.</span></li>
+        <li><span class="n">06</span><span><b>Procesos administrativos</b> manuales.</span></li>
+        <li><span class="n">07</span><span><b>Falta de control</b> y visibilidad del negocio.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- PROPUESTA DE VALOR -->
+<section class="sec alt">
+  <div class="wrap">
+    <span class="sec-tag rv-l">Nuestra propuesta de valor</span>
+    <h2 class="rv-l">Unimos experiencia, especialización y una <span class="grad-text">red de aliados</span></h2>
+    <p class="lead rv-r">Para ofrecerte soluciones reales y medibles, en cuatro frentes:</p>
+    <div class="grid4" style="margin-top:38px">
+      <article class="card pilar rv-l"><div class="ic">📈</div><h3>Más clientes</h3><p>Nuevas oportunidades comerciales y generación de carga.</p></article>
+      <article class="card pilar rv-r"><div class="ic">✅</div><h3>Operación en regla</h3><p>Gestión de trámites y permisos para reducir complicaciones.</p></article>
+      <article class="card pilar rv-l"><div class="ic">👁️</div><h3>Más visibilidad</h3><p>Marketing, branding y presencia profesional.</p></article>
+      <article class="card pilar rv-r"><div class="ic">🎛️</div><h3>Más control</h3><p>Procesos digitales, información organizada e indicadores.</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <p class="big rv-l">Centro de soluciones para transportistas</p>
+    <p class="rv-r">Todo lo que tu operación necesita, en un solo lugar.</p>
+  </div>
+</div>
+
+<!-- REPRESENTACIÓN COMERCIAL -->
+<section class="sec" id="servicios">
+  <div class="wrap">
+    <div class="grid2" style="align-items:start">
+      <div class="rv-l">
+        <span class="sec-tag">Servicios</span>
+        <h2>Representación <span class="grad-text">comercial</span></h2>
+        <p class="lead">Conectamos tu negocio con nuevas oportunidades de carga y clientes.</p>
+        <div class="photo" style="margin-top:26px"><img src="img/comercial.jpg" alt="Equipo de trabajo de NEXIUM con un cliente" loading="lazy"></div>
+      </div>
+      <ol class="num-list rv-r">
+        <li><span class="n">01</span><span><b>Prospección</b> y generación de clientes.</span></li>
+        <li><span class="n">02</span><span><b>Representación</b> ante clientes.</span></li>
+        <li><span class="n">03</span><span><b>Negociación</b> y seguimiento comercial.</span></li>
+        <li><span class="n">04</span><span><b>Alianzas</b> estratégicas.</span></li>
+        <li><span class="n">05</span><span><b>Desarrollo</b> de cuentas y proyectos.</span></li>
+        <li><span class="n">06</span><span><b>Asesoría</b> en rutas y mercados.</span></li>
+        <li><span class="n">07</span><span><b>Programas de beneficios</b> y tarifas especiales.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- GESTIÓN Y TRÁMITES -->
+<section class="sec alt" id="tramites">
+  <div class="wrap">
+    <span class="sec-tag rv-l">Gestión y trámites</span>
+    <h2 class="rv-l">Nos encargamos de los trámites para que tú te enfoques en <span class="grad-text">tu operación</span></h2>
+    <div class="grid2" style="margin-top:40px;align-items:start">
+      <article class="rv-l">
+        <div class="photo" style="margin-bottom:20px"><img src="img/gestoria-federal.jpg" alt="Placa y documentos de autotransporte federal" loading="lazy"></div>
+        <h3 style="color:#fff;font-size:1.3rem;margin-bottom:14px">Gestoría federal</h3>
+        <ul class="checks">
+          <li>Altas y bajas de placas.</li>
+          <li>Tarjeta de circulación y permisos.</li>
+          <li>Cambio de modalidad.</li>
+          <li>Verificaciones y emisiones.</li>
+          <li>Permisos para materiales peligrosos.</li>
+          <li>Permisos especiales.</li>
+          <li>Permisos para exceso de dimensiones.</li>
+          <li>Asesoría en normatividad y regulaciones.</li>
+        </ul>
+      </article>
+      <article class="rv-r">
+        <div class="photo" style="margin-bottom:20px"><img src="img/gestoria-estatal.jpg" alt="Placas y documentos estatales" loading="lazy"></div>
+        <h3 style="color:#fff;font-size:1.3rem;margin-bottom:14px">Gestoría estatal</h3>
+        <ul class="checks">
+          <li>Altas y bajas de placas.</li>
+          <li>Refrendos y renovaciones.</li>
+          <li>Cambio de propietario.</li>
+          <li>Verificación ambiental.</li>
+          <li>Permisos municipales y estatales.</li>
+          <li>Liberaciones y corralones.</li>
+          <li>Recuperación de documentos.</li>
+          <li>Asesoría y seguimiento.</li>
+        </ul>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:36px" class="rv-l">
+      <a class="btn btn-wa" href="https://wa.me/522294586824?text=Hola%2C%20necesito%20ayuda%20con%20un%20tr%C3%A1mite%20de%20transporte" target="_blank" rel="noopener">Cotizar un trámite por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETING ESPECIALIZADO -->
+<section class="sec">
+  <div class="wrap">
+    <span class="sec-tag rv-l">Marketing especializado</span>
+    <h2 class="rv-l">Marketing especializado en <span class="grad-text">logística, transporte y branding</span></h2>
+    <div class="grid2" style="margin-top:36px;align-items:start">
+      <div class="photo rv-l"><img src="img/marketing.jpg" alt="Marketing y redes sociales para empresas de transporte" loading="lazy"></div>
+      <div class="grid2 rv-r" style="gap:18px">
+        <article class="card"><h3>01 · Estrategia y redes sociales</h3>
+          <ul class="mini-list"><li>Facebook, Instagram, TikTok y LinkedIn.</li><li>Contenido dirigido a empresas.</li><li>Publicidad digital.</li><li>Generación de leads.</li></ul></article>
+        <article class="card"><h3>02 · Imagen y branding</h3>
+          <ul class="mini-list"><li>Identidad corporativa.</li><li>Presentaciones y catálogos.</li><li>Material promocional.</li><li>Uniformes y señalización.</li></ul></article>
+        <article class="card"><h3>03 · Branding vehicular</h3>
+          <ul class="mini-list"><li>Diseño y rotulación.</li><li>Vinil parcial o integral.</li><li>Rotulación de cajas secas.</li><li>Microperforado.</li><li>Reflectivos.</li><li>Trámites y diseños gráficos.</li></ul></article>
+        <article class="card"><h3>04 · Producción audiovisual</h3>
+          <ul class="mini-list"><li>Fotografía y video.</li><li>Reels.</li><li>Contenido corporativo.</li><li>Edición y postproducción.</li></ul></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIGITALIZACIÓN -->
+<section class="sec alt">
+  <div class="wrap">
+    <div class="grid2" style="align-items:center">
+      <div class="rv-l">
+        <span class="sec-tag">Digitalización</span>
+        <h2>Procesos administrativos y comerciales <span class="grad-text">más eficientes</span></h2>
+        <p class="lead">Ayudamos a transformar procesos manuales en herramientas de control y seguimiento.</p>
+        <div class="photo" style="margin-top:26px"><img src="img/digital.jpg" alt="Panel de indicadores y control digital" loading="lazy"></div>
+      </div>
+      <ul class="checks rv-r" style="grid-template-columns:1fr 1fr;gap:14px 22px">
+        <li>Expedientes digitales.</li>
+        <li>Facturación y cobranza.</li>
+        <li>Formularios en línea.</li>
+        <li>Reportes e indicadores — KPIs.</li>
+        <li>Control y seguimiento de trámites.</li>
+        <li>Integración con proveedores.</li>
+        <li>CRM para gestión de clientes.</li>
+        <li>Soporte técnico y capacitación.</li>
+        <li>Herramientas administrativas.</li>
+        <li>Automatización de procesos.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS COMPLEMENTARIOS -->
+<section class="sec">
+  <div class="wrap">
+    <span class="sec-tag rv-l">Servicios complementarios</span>
+    <h2 class="rv-l">Todo lo que tu operación necesita, <span class="grad-text">en un solo lugar</span></h2>
+    <div class="grid3" style="margin-top:38px">
+      <article class="card rv-l"><div class="ic">🧰</div><h3>Insumos y refacciones</h3>
+        <ul class="mini-list"><li>Llantas.</li><li>Lubricantes.</li><li>Baterías.</li><li>Frenos.</li><li>Suspensión.</li><li>Accesorios.</li><li>Herramientas.</li></ul></article>
+      <article class="card rv-r"><div class="ic">🛰️</div><h3>Tecnología</h3>
+        <ul class="mini-list"><li>GPS.</li><li>Rastreo satelital.</li><li>Cámaras.</li><li>Telemetría.</li><li>Control de combustible.</li><li>Software para flotillas.</li></ul></article>
+      <article class="card rv-l"><div class="ic">🔧</div><h3>Mantenimiento</h3>
+        <ul class="mini-list"><li>Talleres.</li><li>Mecánica.</li><li>Vulcanizadoras.</li><li>Mantenimiento preventivo.</li><li>Servicios especializados.</li></ul></article>
+      <article class="card rv-r"><div class="ic">🛡️</div><h3>Seguros y seguridad</h3>
+        <ul class="mini-list"><li>Seguros.</li><li>Custodia.</li><li>EPP.</li><li>Seguridad patrimonial.</li></ul></article>
+      <article class="card rv-l"><div class="ic">👥</div><h3>Desarrollo humano</h3>
+        <ul class="mini-list"><li>Capacitación.</li><li>Reclutamiento de operadores.</li><li>Consultoría.</li></ul></article>
+      <article class="card rv-r"><div class="ic">💰</div><h3>Financiamiento y otros</h3>
+        <ul class="mini-list"><li>Arrendamiento.</li><li>Créditos.</li><li>Estudios de rutas.</li><li>Análisis de costos.</li></ul></article>
+    </div>
+    <div class="photo rv-l" style="margin-top:26px;max-height:340px"><img src="img/taller.jpg" alt="Mantenimiento de unidades de transporte" loading="lazy" style="max-height:340px"></div>
+  </div>
+</section>
+
+<!-- OTROS GIROS -->
+<section class="sec alt">
+  <div class="wrap">
+    <span class="sec-tag rv-l">Más giros del grupo</span>
+    <h2 class="rv-l">Además de la logística, <span class="grad-text">otros negocios</span></h2>
+    <div class="grid3" style="margin-top:34px">
+      <article class="card rv-l"><div class="ic">🏷️</div><h3>Compra y venta, mayoreo y menudeo</h3>
+        <p>Compra y venta de productos al mayoreo y menudeo. Cuéntanos qué buscas o qué quieres mover y lo revisamos contigo.</p>
+        <p style="margin-top:16px"><a class="btn btn-cy btn-sm" href="https://wa.me/522294586824?text=Hola%2C%20me%20interesa%20la%20compra%20y%20venta%20al%20mayoreo%20y%20menudeo" target="_blank" rel="noopener">Preguntar por WhatsApp</a></p></article>
+      <article class="card rv-r"><div class="ic">🏠</div><h3>Administración de propiedades</h3>
+        <p>Administración de propiedades para renta o venta: tu inmueble, gestionado de forma profesional.</p>
+        <p style="margin-top:16px"><a class="btn btn-cy btn-sm" href="https://wa.me/522294586824?text=Hola%2C%20me%20interesa%20la%20administraci%C3%B3n%20de%20propiedades%20para%20renta%20o%20venta" target="_blank" rel="noopener">Preguntar por WhatsApp</a></p></article>
+      <article class="card rv-l"><div class="ic">🚗</div><h3>Venta de autos</h3>
+        <p>Venta de autos. Pregúntanos por las unidades disponibles o véndenos la tuya.</p>
+        <p style="margin-top:16px"><a class="btn btn-cy btn-sm" href="https://wa.me/522294586824?text=Hola%2C%20me%20interesa%20la%20venta%20de%20autos" target="_blank" rel="noopener">Preguntar por WhatsApp</a></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- COBERTURA -->
+<section class="sec" id="cobertura">
+  <div class="wrap">
+    <span class="sec-tag rv-l">Cobertura nacional</span>
+    <h2 class="rv-l">Una red de soluciones con presencia <span class="grad-text">estratégica en México</span></h2>
+    <div class="photo rv-r" style="margin:30px 0;background:#050b24;padding:14px"><img src="img/mapa.jpg" alt="Mapa de cobertura nacional de NEXIUM por zonas" loading="lazy" style="object-fit:contain"></div>
+    <div class="grid3">
+      <div class="zone rv-l"><h3><span class="dot" style="background:#3b82f6"></span>Zona Norte</h3><p style="color:var(--muted)">Nuevo León · Aguascalientes · Zacatecas · San Luis Potosí</p></div>
+      <div class="zone rv-r"><h3><span class="dot" style="background:#f5c518"></span>Zona Bajío</h3><p style="color:var(--muted)">Guanajuato · Querétaro · Michoacán · Jalisco</p></div>
+      <div class="zone rv-l"><h3><span class="dot" style="background:#a855f7"></span>Zona Centro</h3><p style="color:var(--muted)">Ciudad de México · Estado de México · Hidalgo · Morelos</p></div>
+      <div class="zone rv-r"><h3><span class="dot" style="background:#ec4899"></span>Zona Sureste</h3><p style="color:var(--muted)">Campeche · Tabasco · Chiapas · Quintana Roo · Yucatán</p></div>
+      <div class="zone rv-l"><h3><span class="dot" style="background:#ef4444"></span>Zona Sur</h3><p style="color:var(--muted)">Puebla · Tlaxcala · Veracruz</p></div>
+      <div class="zone rv-r" style="display:flex;align-items:center"><p style="color:#dbeafe"><b>¿Tu estado no aparece?</b><br><span style="color:var(--muted)">Pregúntanos: la red de aliados sigue creciendo.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section class="sec alt">
+  <div class="wrap">
+    <span class="sec-tag rv-l">Soluciones para cada tipo de empresa</span>
+    <h2 class="rv-l">Nos adaptamos a tus necesidades, <span class="grad-text">sin importar el tamaño</span> de tu operación</h2>
+    <div class="grid3" style="margin-top:38px">
+      <article class="card rv-l" style="padding:0;overflow:hidden"><img src="img/transportista.jpg" alt="Transportista independiente junto a su unidad" loading="lazy" style="height:210px;width:100%;object-fit:cover"><div style="padding:24px"><h3>Transportistas independientes</h3><p>Trámites en regla, más carga y presencia profesional, sin cargar con todo tú solo.</p></div></article>
+      <article class="card rv-r" style="padding:0;overflow:hidden"><img src="img/operadores.jpg" alt="Operadores revisando una tableta frente a su unidad" loading="lazy" style="height:210px;width:100%;object-fit:cover"><div style="padding:24px"><h3>Medianas empresas</h3><p>Control, procesos y representación comercial para crecer con orden.</p></div></article>
+      <article class="card rv-l" style="padding:0;overflow:hidden"><img src="img/flota.jpg" alt="Flotilla de tractocamiones" loading="lazy" style="height:210px;width:100%;object-fit:cover"><div style="padding:24px"><h3>Grandes empresas</h3><p>Un aliado integral para tu operación: aliados confiables, tecnología e indicadores.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO TRABAJAMOS -->
+<section class="sec" id="proceso">
+  <div class="wrap">
+    <span class="sec-tag rv-l">¿Cómo trabajamos?</span>
+    <h2 class="rv-l">De la necesidad a la <span class="grad-text">solución</span>, en 5 pasos</h2>
+    <div class="steps" style="margin-top:38px">
+      <div class="step rv-l"><div class="sn">1</div><h3>Analizamos</h3><p>Entendemos tus necesidades.</p></div>
+      <div class="step rv-r"><div class="sn">2</div><h3>Diseñamos</h3><p>Proponemos la mejor solución.</p></div>
+      <div class="step rv-l"><div class="sn">3</div><h3>Coordinamos</h3><p>Integramos a nuestros aliados.</p></div>
+      <div class="step rv-r"><div class="sn">4</div><h3>Ejecutamos</h3><p>Damos seguimiento a cada servicio.</p></div>
+      <div class="step rv-l"><div class="sn">5</div><h3>Medimos</h3><p>Evaluamos resultados y oportunidades de mejora.</p></div>
+    </div>
+    <div class="grid2" style="margin-top:30px;align-items:center">
+      <div class="photo rv-l"><img src="img/proceso.jpg" alt="Equipo de NEXIUM trabajando en una solución" loading="lazy"></div>
+      <div class="rv-r">
+        <h3 style="color:#fff;font-size:1.4rem;margin-bottom:10px">Nuestro compromiso</h3>
+        <p style="color:var(--muted);font-size:1.08rem">Acompañarte desde la identificación de la necesidad hasta la solución.</p>
+        <div class="photo" style="margin-top:22px"><img src="img/solucion.jpg" alt="La pieza que completa tu operación" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ ELEGIRNOS -->
+<section class="sec alt">
+  <div class="wrap">
+    <span class="sec-tag rv-l">¿Por qué elegirnos?</span>
+    <h2 class="rv-l">No solo resolvemos necesidades, <span class="grad-text">creamos alianzas</span> de largo plazo</h2>
+    <div class="grid3" style="margin-top:38px">
+      <article class="card rv-l"><div class="ic">🧩</div><h3>Soluciones integrales en un solo lugar</h3><p>Todo lo que tu operación necesita, en un solo lugar.</p></article>
+      <article class="card rv-r"><div class="ic">🎓</div><h3>Experiencia y especialización</h3><p>Conocimiento de las necesidades del sector transporte.</p></article>
+      <article class="card rv-l"><div class="ic">🤝</div><h3>Red de aliados confiables</h3><p>Acceso a especialistas y proveedores.</p></article>
+      <article class="card rv-r"><div class="ic">🖥️</div><h3>Tecnología y procesos eficientes</h3><p>Herramientas para mejorar el control del negocio.</p></article>
+      <article class="card rv-l"><div class="ic">🌱</div><h3>Compromiso con tu crecimiento</h3><p>Nuestro objetivo es ayudarte a operar mejor y generar nuevas oportunidades.</p></article>
+      <article class="card rv-r"><div class="ic">🎯</div><h3>Atención personalizada</h3><p>Soluciones adaptadas a cada empresa.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + CONTACTO -->
+<section class="sec" id="contacto">
+  <div class="wrap">
+    <div style="text-align:center;max-width:760px;margin:0 auto 44px">
+      <img src="img/logo-nexium.jpg" alt="GRUPO NEXIUM" class="rv-l" style="width:min(280px,70vw);margin:0 auto 24px;border-radius:18px;border:1px solid var(--line)">
+      <h2 class="rv-l">¿Listo para llevar tu operación <span class="grad-text">al siguiente nivel?</span></h2>
+      <p class="lead rv-r" style="margin:0 auto">Solicita tu diagnóstico y descubre cómo podemos ayudarte a crecer: más clientes, más control, más oportunidades, un solo aliado.</p>
+    </div>
+    <div class="grid2" style="align-items:start">
+      <div class="rv-l">
+        <h3 style="color:#fff;font-size:1.3rem;margin-bottom:14px">Contacto directo</h3>
+        <ul class="checks">
+          <li>WhatsApp y teléfono: 229 458 6824</li>
+          <li>Cobertura nacional: Norte, Bajío, Centro, Sureste y Sur</li>
+          <li>Atención a transportistas independientes, medianas y grandes empresas</li>
+        </ul>
+        <p style="margin-top:22px"><a class="btn btn-wa" href="https://wa.me/522294586824" target="_blank" rel="noopener">💬 Escribir por WhatsApp</a></p>
+        <div class="app-band" style="margin-top:30px">
+          <div><h3>📱 App de GRUPO NEXIUM</h3><p>Descarga la aplicación gratis y lleva a NEXIUM en tu celular.</p></div>
+          <a class="btn btn-cy" href="nexium.apk" download>Descargar la app</a>
+        </div>
+      </div>
+      <form class="rv-r" id="cotForm">
+        <div><label>Nombre<input id="f-nombre" type="text" placeholder="Tu nombre" required></label></div>
+        <div><label>Empresa<input id="f-empresa" type="text" placeholder="Nombre de tu empresa (opcional)"></label></div>
+        <div><label>¿Qué necesitas?
+          <select id="f-servicio">
+            <option>Representación comercial</option>
+            <option>Gestoría federal</option>
+            <option>Gestoría estatal</option>
+            <option>Marketing especializado</option>
+            <option>Digitalización</option>
+            <option>Servicios complementarios</option>
+            <option>Compra y venta mayoreo y menudeo</option>
+            <option>Administración de propiedades</option>
+            <option>Venta de autos</option>
+            <option>Diagnóstico general</option>
+          </select></label></div>
+        <div><label>Cuéntanos tu caso<textarea id="f-msg" rows="4" placeholder="Ej.: necesito dar de alta unas placas y conseguir más carga en el Bajío"></textarea></label></div>
+        <button class="btn btn-wa" type="submit" style="justify-content:center">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img class="fl" src="img/logo-nexium.jpg" alt="GRUPO NEXIUM">
+    <p style="font-family:'Archivo';font-weight:800;color:#fff;letter-spacing:.05em">NEXIUM <span style="color:var(--cyan)">|</span> SETAG</p>
+    <p style="margin-top:8px">Conectamos soluciones. Impulsamos negocios.<br>WhatsApp 229 458 6824 · Cobertura nacional</p>
+    <p style="margin-top:14px;font-size:.8rem">© 2026 GRUPO NEXIUM. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/522294586824?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20de%20GRUPO%20NEXIUM" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script>
+var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });},{threshold:.12}) : null;
+document.querySelectorAll('.rv-l,.rv-r').forEach(function(el){ if(io){ io.observe(el); } else { el.classList.add('in'); } });
+document.getElementById('cotForm').addEventListener('submit', function(ev){
+  ev.preventDefault();
+  var n = document.getElementById('f-nombre').value.trim();
+  var em = document.getElementById('f-empresa').value.trim();
+  var s = document.getElementById('f-servicio').value;
+  var m = document.getElementById('f-msg').value.trim();
+  var txt = 'Hola, soy ' + n + (em ? ' de ' + em : '') + '. Necesito: ' + s + '.' + (m ? ' ' + m : '');
+  window.open('https://wa.me/522294586824?text=' + encodeURIComponent(txt), '_blank');
+});
+if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js').then(function(r){ r.update(); }).catch(function(){}); }
+</script>
+</body>
+</html>
